@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-dashboard-75-experiments",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "db-env": "node node_modules/.bin/nodejs-dashboard -- ./env.sh",
+    "nm-env": "node node_modules/.bin/nodejs-dashboard -- node_modules/.bin/nodemon --exec ./env.sh"
+  },
+  "dependencies": {
+    "nodejs-dashboard": "^0.4.1",
+    "nodemon": "^1.12.1"
+  }
+}
