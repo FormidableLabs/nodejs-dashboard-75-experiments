@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "db-env": "node node_modules/.bin/nodejs-dashboard -- ./env.sh",
-    "nm-env": "node node_modules/.bin/nodejs-dashboard -- node_modules/.bin/nodemon --exec ./env.sh"
+    "db-env": "node node_modules/.bin/nodejs-dashboard -- printenv",
+    "nm-env": "node node_modules/.bin/nodejs-dashboard -- node_modules/.bin/nodemon --exec printenv"
   },
   "dependencies": {
     "nodejs-dashboard": "^0.4.1",
