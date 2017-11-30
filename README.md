@@ -1,6 +1,8 @@
 nodejs-dashboard + nodemon env vars
 ===================================
 
+Experiment repo for: https://github.com/FormidableLabs/nodejs-dashboard/issues/75
+
 ## Install
 
 ```sh
@@ -19,3 +21,7 @@ Tasks:
 
 - `yarn run db-env`: Run dashboard without nodemon.
 - `yarn run nm-env`: Run dashboard with nodemon.
+
+## Status
+
+- @ryan-roemer: I see all three env vars for both tasks on Node 8.4.0 + Mac.
