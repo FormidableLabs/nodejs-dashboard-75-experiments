@@ -9,18 +9,40 @@ Experiment repo for: https://github.com/FormidableLabs/nodejs-dashboard/issues/7
 $ yarn
 ```
 
+Docker:
+
+```sh
+# get docker, docker-compose
+$ brew install docker docker-compose
+
+# first time
+$ docker-machine create default
+
+# every other time
+$ docker-machine start default
+$ eval $(docker-machine env default)
+```
+
 ## Scripts
 
 The `./env.sh` script displays environment variables grepped to `nodejs-dashboard_`. We try different combinations of nodejs-dashboard + nodemon to make sure we have three variables show up like:
 
 ```
-nodejs-dashboard_REFRESH_INTERVAL=1000                                             nodejs-dashboard_PORT=9838                                                        nodejs-dashboard_BLOCKED_THRESHOLD=10
+nodejs-dashboard_REFRESH_INTERVAL=1000
+nodejs-dashboard_PORT=9838
+nodejs-dashboard_BLOCKED_THRESHOLD=10
 ```
 
-Tasks:
+Local:
 
 - `yarn run db-env`: Run dashboard without nodemon.
 - `yarn run nm-env`: Run dashboard with nodemon.
+
+Docker:
+
+
+- `docker-compose run --rm yarn run db-env`: Run dashboard without nodemon.
+- `docker-compose run --rm yarn run nm-env`: Run dashboard with nodemon.
 
 ## Status
 
