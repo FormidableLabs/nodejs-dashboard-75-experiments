@@ -8,7 +8,7 @@
     "nm-env": "node node_modules/.bin/nodejs-dashboard -- node_modules/.bin/nodemon --exec \"node ./env.js\""
   },
   "dependencies": {
-    "nodejs-dashboard": "^0.4.1",
+    "nodejs-dashboard": "FormidableLabs/nodejs-dashboard#bug/env-var-dashes",
     "nodemon": "^1.12.1"
   }
 }
